@@ -1,0 +1,991 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 467.363 ; gain = 160.352
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.1/data/ip'.
+add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 543.664 ; gain = 76.301
+Command: read_checkpoint -auto_incremental -incremental C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xczu3eg-sfvc784-1-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sfvc784-1-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24804
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1816.551 ; gain = 337.312
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_1' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_1' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_9_0' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_gpio_9_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_9_0' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_gpio_9_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_4_2' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_gpio_4_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_4_2' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_gpio_4_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_10_0' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_gpio_10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_10_0' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_gpio_10_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_4_0' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_gpio_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_4_0' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_gpio_4_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_4_1' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_gpio_4_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_4_1' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_gpio_4_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_8_0' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_gpio_8_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_8_0' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_gpio_8_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_2' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_gpio_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_2' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_gpio_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_iic_0_0' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_iic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_iic_0_0' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_iic_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'iic2intc_irpt' of module 'design_1_axi_iic_0_0' is unconnected for instance 'axi_iic_0' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:617]
+WARNING: [Synth 8-7071] port 'gpo' of module 'design_1_axi_iic_0_0' is unconnected for instance 'axi_iic_0' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:617]
+WARNING: [Synth 8-7023] instance 'axi_iic_0' of module 'design_1_axi_iic_0_0' has 27 connections declared, but only 25 given [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:617]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_quad_spi_0_0' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_quad_spi_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_quad_spi_0_0' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_quad_spi_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'io0_t' of module 'design_1_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:643]
+WARNING: [Synth 8-7071] port 'io1_o' of module 'design_1_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:643]
+WARNING: [Synth 8-7071] port 'io1_t' of module 'design_1_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:643]
+WARNING: [Synth 8-7071] port 'sck_t' of module 'design_1_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:643]
+WARNING: [Synth 8-7071] port 'ss_t' of module 'design_1_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:643]
+WARNING: [Synth 8-7071] port 'ip2intc_irpt' of module 'design_1_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:643]
+WARNING: [Synth 8-7023] instance 'axi_quad_spi_0' of module 'design_1_axi_quad_spi_0_0' has 33 connections declared, but only 27 given [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:643]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_quad_spi_0_1' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_quad_spi_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_quad_spi_0_1' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_axi_quad_spi_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'io0_t' of module 'design_1_axi_quad_spi_0_1' is unconnected for instance 'axi_quad_spi_1' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:671]
+WARNING: [Synth 8-7071] port 'io1_o' of module 'design_1_axi_quad_spi_0_1' is unconnected for instance 'axi_quad_spi_1' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:671]
+WARNING: [Synth 8-7071] port 'io1_t' of module 'design_1_axi_quad_spi_0_1' is unconnected for instance 'axi_quad_spi_1' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:671]
+WARNING: [Synth 8-7071] port 'sck_t' of module 'design_1_axi_quad_spi_0_1' is unconnected for instance 'axi_quad_spi_1' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:671]
+WARNING: [Synth 8-7071] port 'ss_t' of module 'design_1_axi_quad_spi_0_1' is unconnected for instance 'axi_quad_spi_1' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:671]
+WARNING: [Synth 8-7071] port 'ip2intc_irpt' of module 'design_1_axi_quad_spi_0_1' is unconnected for instance 'axi_quad_spi_1' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:671]
+WARNING: [Synth 8-7023] instance 'axi_quad_spi_1' of module 'design_1_axi_quad_spi_0_1' has 33 connections declared, but only 27 given [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:671]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_clk_wiz_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_0_0' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_0_0' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:702]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:702]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:702]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:702]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'design_1_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:702]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps8_0_axi_periph_0' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1098]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_QJIMLI' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_QJIMLI' (0#1) [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2918]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1D3SAH3' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:3050]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1D3SAH3' (0#1) [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:3050]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_P3UMW5' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:3182]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_P3UMW5' (0#1) [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:3182]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1E9R4HW' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:3314]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1E9R4HW' (0#1) [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:3314]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_NB1YAO' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:3446]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_NB1YAO' (0#1) [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:3446]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1FZ4A9T' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:3578]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1FZ4A9T' (0#1) [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:3578]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_MPDFMR' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:3710]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_MPDFMR' (0#1) [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:3710]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_1GV49DU' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:3842]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_1GV49DU' (0#1) [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:3842]
+INFO: [Synth 8-6157] synthesizing module 'm08_couplers_imp_K8X5UY' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:3974]
+INFO: [Synth 8-6155] done synthesizing module 'm08_couplers_imp_K8X5UY' (0#1) [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:3974]
+INFO: [Synth 8-6157] synthesizing module 'm09_couplers_imp_1AITGY3' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:4106]
+INFO: [Synth 8-6155] done synthesizing module 'm09_couplers_imp_1AITGY3' (0#1) [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:4106]
+INFO: [Synth 8-6157] synthesizing module 'm10_couplers_imp_11TD8LA' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:4238]
+INFO: [Synth 8-6155] done synthesizing module 'm10_couplers_imp_11TD8LA' (0#1) [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:4238]
+INFO: [Synth 8-6157] synthesizing module 'm11_couplers_imp_SLT6JJ' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:4370]
+INFO: [Synth 8-6155] done synthesizing module 'm11_couplers_imp_SLT6JJ' (0#1) [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:4370]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1A7ZMW4' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:4502]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1A7ZMW4' (0#1) [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:4502]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2877]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2877]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_0' has 40 connections declared, but only 38 given [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2877]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps8_0_axi_periph_0' (0#1) [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1098]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_10_1' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_10_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_10_1' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_10_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_11_0' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_11_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_11_0' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_11_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_0_0' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_0_0' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_6_0' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_6_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_6_0' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_6_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_0_1' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_0_1' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_12_0' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_12_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_12_0' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_12_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_10_0' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_10_0' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_10_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_4_1' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_4_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_4_1' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_4_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_4_2' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_4_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_4_2' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_4_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_14_0' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_14_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_14_0' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_14_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_4_0' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_4_0' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_4_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_7_2' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_7_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_7_2' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_7_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_14_1' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_14_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_14_1' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_14_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_7_0' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_7_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_7_0' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_7_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_7_1' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_7_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_7_1' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_ds_buf_7_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_0_0' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_0_0' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (0#1) [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/.Xil/Vivado-21300-DESKTOP-JTT5U02/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'maxigp2_awuser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1055]
+WARNING: [Synth 8-7071] port 'maxigp2_aruser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1055]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'design_1_zynq_ultra_ps_e_0_0' has 42 connections declared, but only 40 given [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1055]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1A7ZMW4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1A7ZMW4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m11_couplers_imp_SLT6JJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m11_couplers_imp_SLT6JJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m11_couplers_imp_SLT6JJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m11_couplers_imp_SLT6JJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m10_couplers_imp_11TD8LA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m10_couplers_imp_11TD8LA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m10_couplers_imp_11TD8LA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m10_couplers_imp_11TD8LA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m09_couplers_imp_1AITGY3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m09_couplers_imp_1AITGY3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m09_couplers_imp_1AITGY3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m09_couplers_imp_1AITGY3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m08_couplers_imp_K8X5UY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m08_couplers_imp_K8X5UY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m08_couplers_imp_K8X5UY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m08_couplers_imp_K8X5UY is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m07_couplers_imp_1GV49DU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m07_couplers_imp_1GV49DU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m07_couplers_imp_1GV49DU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m07_couplers_imp_1GV49DU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m06_couplers_imp_MPDFMR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m06_couplers_imp_MPDFMR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m06_couplers_imp_MPDFMR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m06_couplers_imp_MPDFMR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m05_couplers_imp_1FZ4A9T is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m05_couplers_imp_1FZ4A9T is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m05_couplers_imp_1FZ4A9T is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m05_couplers_imp_1FZ4A9T is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m04_couplers_imp_NB1YAO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m04_couplers_imp_NB1YAO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m04_couplers_imp_NB1YAO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m04_couplers_imp_NB1YAO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m03_couplers_imp_1E9R4HW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m03_couplers_imp_1E9R4HW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m03_couplers_imp_1E9R4HW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m03_couplers_imp_1E9R4HW is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m02_couplers_imp_P3UMW5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m02_couplers_imp_P3UMW5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m02_couplers_imp_P3UMW5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m02_couplers_imp_P3UMW5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_1D3SAH3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_1D3SAH3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_1D3SAH3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_1D3SAH3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_QJIMLI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_QJIMLI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_QJIMLI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_QJIMLI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M05_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M05_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M06_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M06_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M07_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M07_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M08_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M08_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M09_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M09_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M10_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M10_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M11_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M11_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1920.867 ; gain = 441.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1938.793 ; gain = 459.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1938.793 ; gain = 459.555
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 1938.793 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_9'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_9'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2/design_1_axi_gpio_0_1_in_context.xdc] for cell 'design_1_i/axi_gpio_8'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2/design_1_axi_gpio_0_1_in_context.xdc] for cell 'design_1_i/axi_gpio_8'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_10_0/design_1_axi_gpio_10_0/design_1_axi_gpio_10_0_in_context.xdc] for cell 'design_1_i/axi_gpio_4'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_10_0/design_1_axi_gpio_10_0/design_1_axi_gpio_10_0_in_context.xdc] for cell 'design_1_i/axi_gpio_4'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_0/design_1_axi_gpio_4_0/design_1_axi_gpio_10_0_in_context.xdc] for cell 'design_1_i/axi_gpio_5'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_0/design_1_axi_gpio_4_0/design_1_axi_gpio_10_0_in_context.xdc] for cell 'design_1_i/axi_gpio_5'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_1/design_1_axi_gpio_4_1/design_1_axi_gpio_10_0_in_context.xdc] for cell 'design_1_i/axi_gpio_6'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_1/design_1_axi_gpio_4_1/design_1_axi_gpio_10_0_in_context.xdc] for cell 'design_1_i/axi_gpio_6'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_2/design_1_axi_gpio_4_2/design_1_axi_gpio_10_0_in_context.xdc] for cell 'design_1_i/axi_gpio_3'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_2/design_1_axi_gpio_4_2/design_1_axi_gpio_10_0_in_context.xdc] for cell 'design_1_i/axi_gpio_3'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_8_0/design_1_axi_gpio_8_0/design_1_axi_gpio_8_0_in_context.xdc] for cell 'design_1_i/axi_gpio_7'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_8_0/design_1_axi_gpio_8_0/design_1_axi_gpio_8_0_in_context.xdc] for cell 'design_1_i/axi_gpio_7'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_9_0/design_1_axi_gpio_9_0/design_1_axi_gpio_9_0_in_context.xdc] for cell 'design_1_i/axi_gpio_10'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_9_0/design_1_axi_gpio_9_0/design_1_axi_gpio_9_0_in_context.xdc] for cell 'design_1_i/axi_gpio_10'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0/design_1_axi_iic_0_0_in_context.xdc] for cell 'design_1_i/axi_iic_0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0/design_1_axi_iic_0_0_in_context.xdc] for cell 'design_1_i/axi_iic_0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_in_context.xdc] for cell 'design_1_i/axi_quad_spi_0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_in_context.xdc] for cell 'design_1_i/axi_quad_spi_0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_1/design_1_axi_quad_spi_0_1/design_1_axi_quad_spi_0_1_in_context.xdc] for cell 'design_1_i/axi_quad_spi_1'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_1/design_1_axi_quad_spi_0_1/design_1_axi_quad_spi_0_1_in_context.xdc] for cell 'design_1_i/axi_quad_spi_1'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+create_clock: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1974.199 ; gain = 12.168
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_10'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_10'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc] for cell 'design_1_i/util_ds_buf_12'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc] for cell 'design_1_i/util_ds_buf_12'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_14'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_14'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_1/design_1_util_ds_buf_10_1/design_1_util_ds_buf_10_1_in_context.xdc] for cell 'design_1_i/util_ds_buf_0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_1/design_1_util_ds_buf_10_1/design_1_util_ds_buf_10_1_in_context.xdc] for cell 'design_1_i/util_ds_buf_0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_11_0/design_1_util_ds_buf_11_0/design_1_util_ds_buf_10_1_in_context.xdc] for cell 'design_1_i/util_ds_buf_1'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_11_0/design_1_util_ds_buf_11_0/design_1_util_ds_buf_10_1_in_context.xdc] for cell 'design_1_i/util_ds_buf_1'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_13'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_13'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_4'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_4'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_1/design_1_util_ds_buf_14_1/design_1_util_ds_buf_10_1_in_context.xdc] for cell 'design_1_i/util_ds_buf_7'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_1/design_1_util_ds_buf_14_1/design_1_util_ds_buf_10_1_in_context.xdc] for cell 'design_1_i/util_ds_buf_7'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_5'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_5'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_2'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_2'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_3'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_3'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_6_0/design_1_util_ds_buf_6_0/design_1_util_ds_buf_6_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_11'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_6_0/design_1_util_ds_buf_6_0/design_1_util_ds_buf_6_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_11'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_7_0/design_1_util_ds_buf_7_0/design_1_util_ds_buf_10_1_in_context.xdc] for cell 'design_1_i/util_ds_buf_8'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_7_0/design_1_util_ds_buf_7_0/design_1_util_ds_buf_10_1_in_context.xdc] for cell 'design_1_i/util_ds_buf_8'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_7_1/design_1_util_ds_buf_7_1/design_1_util_ds_buf_10_1_in_context.xdc] for cell 'design_1_i/util_ds_buf_9'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_7_1/design_1_util_ds_buf_7_1/design_1_util_ds_buf_10_1_in_context.xdc] for cell 'design_1_i/util_ds_buf_9'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_7_2/design_1_util_ds_buf_7_2/design_1_util_ds_buf_10_1_in_context.xdc] for cell 'design_1_i/util_ds_buf_6'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_7_2/design_1_util_ds_buf_7_2/design_1_util_ds_buf_10_1_in_context.xdc] for cell 'design_1_i/util_ds_buf_6'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Parsing XDC File [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/new/OSDZU3_HardwarePlatform_IO_Standards.xdc]
+Finished Parsing XDC File [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/new/OSDZU3_HardwarePlatform_IO_Standards.xdc]
+Sourcing Tcl File [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_helper.tcl]
+Finished Sourcing Tcl File [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_helper.tcl]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_helper.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:2]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:3]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:4]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:5]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:8]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:9]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:12]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:13]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:14]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:15]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:16]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:17]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:18]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:21]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:22]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:23]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:24]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:25]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:28]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:29]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:30]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:31]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:32]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:33]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:34]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:35]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:36]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:37]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:38]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:39]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:40]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:41]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:42]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:43]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:44]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:45]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:46]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:47]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:48]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:49]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:50]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:51]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:52]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:53]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:54]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:55]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:56]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:57]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:58]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:59]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:60]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:61]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:62]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:63]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:64]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:65]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:66]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:67]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:68]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:69]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:70]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:71]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:72]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:73]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:74]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:75]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:76]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:77]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:78]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:79]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:82]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:83]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:86]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:87]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:88]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:89]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:92]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:93]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:94]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:95]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:96]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:97]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:98]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:99]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:100]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:101]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:104]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:105]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:106]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:107]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:108]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:109]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:110]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:111]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:112]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:113]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:114]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:115]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:116]
+INFO: [Vivado 12-1808] Property 'PACKAGE_PIN' is not supported for elaborated designs for objects of type 'port'. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:117]
+INFO: [Common 17-14] Message 'Vivado 12-1808' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl:117]
+Finished Sourcing Tcl File [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1974.199 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1974.199 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/axi_quad_spi_0' at clock pin 'ext_spi_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/axi_quad_spi_1' at clock pin 'ext_spi_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1974.199 ; gain = 494.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sfvc784-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1974.199 ; gain = 494.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_32_37[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_32_37[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_32_37[1]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_32_37[1]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_32_37[2]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_32_37[2]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_32_37[3]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_32_37[3]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_32_37[4]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_32_37[4]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_32_37[5]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_32_37[5]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[10]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[10]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[11]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[11]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[12]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[12]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[13]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[13]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[14]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[14]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[15]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[15]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[16]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[16]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[17]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[17]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[18]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[18]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[19]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[19]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[1]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[1]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[20]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[20]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[21]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[21]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[22]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[22]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[23]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[23]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[24]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[24]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[25]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 35).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[25]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 36).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[26]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 37).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[26]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 38).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[27]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 39).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[27]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 40).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[28]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 41).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[28]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 42).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[29]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 43).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[29]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 44).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[2]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 45).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[2]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 46).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[30]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 47).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[30]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 48).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[31]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 49).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[31]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 50).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[3]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 51).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[3]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 52).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[4]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 53).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[4]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 54).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[5]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 55).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[5]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 56).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[6]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 57).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[6]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 58).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[7]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 59).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[7]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 60).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[8]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 61).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[8]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 62).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SE_0_31[9]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 63).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SE_0_31[9]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_in_context.xdc, line 64).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[10]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[10]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[11]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[11]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[12]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[12]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[13]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[13]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[14]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[14]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[15]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[15]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[16]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[16]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[17]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[17]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[18]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[18]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[19]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[19]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[1]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[1]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[20]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[20]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[21]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[21]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[2]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[2]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[3]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[3]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[4]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[4]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[5]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 35).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[5]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 36).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[6]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 37).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[6]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 38).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[7]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 39).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[7]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 40).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[8]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 41).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[8]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 42).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[9]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 43).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_p[9]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_in_context.xdc, line 44).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SDA_0[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_1/design_1_util_ds_buf_10_1/design_1_util_ds_buf_10_1_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SDA_0[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_1/design_1_util_ds_buf_10_1/design_1_util_ds_buf_10_1_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_SCL_0[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_11_0/design_1_util_ds_buf_11_0/design_1_util_ds_buf_10_1_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_SCL_0[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_11_0/design_1_util_ds_buf_11_0/design_1_util_ds_buf_10_1_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[10]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[10]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[11]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[11]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[12]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[12]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[13]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[13]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[14]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[14]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[15]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[15]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[16]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[16]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[17]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[17]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[18]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[18]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[19]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[19]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[1]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[1]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[20]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[20]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[21]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[21]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[2]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[2]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[3]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[3]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[4]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[4]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[5]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 35).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[5]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 36).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[6]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 37).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[6]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 38).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[7]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 39).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[7]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 40).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[8]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 41).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[8]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 42).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[9]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 43).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DS_0_21_n[9]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0/design_1_util_ds_buf_10_0_in_context.xdc, line 44).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA1[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA1[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA1[10]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA1[10]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA1[11]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA1[11]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA1[1]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA1[1]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA1[2]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA1[2]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA1[3]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA1[3]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA1[4]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA1[4]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA1[5]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA1[5]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA1[6]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA1[6]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA1[7]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA1[7]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA1[8]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA1[8]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA1[9]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA1[9]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_CLK1[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_1/design_1_util_ds_buf_14_1/design_1_util_ds_buf_10_1_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_CLK1[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_1/design_1_util_ds_buf_14_1/design_1_util_ds_buf_10_1_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA2[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA2[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA2[10]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA2[10]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA2[11]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA2[11]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA2[1]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA2[1]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA2[2]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA2[2]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA2[3]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA2[3]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA2[4]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA2[4]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA2[5]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA2[5]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA2[6]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA2[6]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA2[7]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA2[7]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA2[8]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA2[8]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA2[9]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA2[9]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0/design_1_util_ds_buf_14_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA3[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA3[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA3[10]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA3[10]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA3[11]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA3[11]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA3[1]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA3[1]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA3[2]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA3[2]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA3[3]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA3[3]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA3[4]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA3[4]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA3[5]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA3[5]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA3[6]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA3[6]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA3[7]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA3[7]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA3[8]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA3[8]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA3[9]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA3[9]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1/design_1_util_ds_buf_14_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA0[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA0[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA0[10]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA0[10]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA0[11]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA0[11]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA0[1]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA0[1]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA0[2]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA0[2]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA0[3]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA0[3]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA0[4]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA0[4]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA0[5]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA0[5]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA0[6]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA0[6]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA0[7]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA0[7]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA0[8]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA0[8]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_DATA0[9]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_DATA0[9]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2/design_1_util_ds_buf_14_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_CLK2[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_7_0/design_1_util_ds_buf_7_0/design_1_util_ds_buf_10_1_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_CLK2[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_7_0/design_1_util_ds_buf_7_0/design_1_util_ds_buf_10_1_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_CLK3[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_7_1/design_1_util_ds_buf_7_1/design_1_util_ds_buf_10_1_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_CLK3[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_7_1/design_1_util_ds_buf_7_1/design_1_util_ds_buf_10_1_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for IOBUF_CLK0[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_7_2/design_1_util_ds_buf_7_2/design_1_util_ds_buf_10_1_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for IOBUF_CLK0[0]. (constraint file  c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_7_2/design_1_util_ds_buf_7_2/design_1_util_ds_buf_10_1_in_context.xdc, line 2).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_vector_logic_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_9. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_8. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_7. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_iic_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_quad_spi_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_quad_spi_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/proc_sys_reset_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_ds_buf_10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_ds_buf_12. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_ds_buf_14. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_ds_buf_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_ds_buf_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_ds_buf_13. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_ds_buf_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_ds_buf_7. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_ds_buf_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_ds_buf_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_ds_buf_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_ds_buf_11. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_ds_buf_8. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_ds_buf_9. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_ds_buf_6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1974.199 ; gain = 494.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1974.199 ; gain = 494.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M05_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M05_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M06_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M06_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M07_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M07_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M08_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M08_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M09_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M09_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M10_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M10_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M11_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M11_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 1974.199 ; gain = 494.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 2453.145 ; gain = 973.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 2453.961 ; gain = 974.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 2465.043 ; gain = 985.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 2478.812 ; gain = 999.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 2478.812 ; gain = 999.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 2478.812 ; gain = 999.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 2478.812 ; gain = 999.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 2478.812 ; gain = 999.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 2478.812 ; gain = 999.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------+----------+
+|      |BlackBox name                  |Instances |
++------+-------------------------------+----------+
+|1     |design_1_xbar_0                |         1|
+|2     |design_1_auto_ds_0             |         1|
+|3     |design_1_auto_pc_0             |         1|
+|4     |design_1_axi_gpio_0_1          |         1|
+|5     |design_1_axi_gpio_9_0          |         1|
+|6     |design_1_axi_gpio_4_2          |         1|
+|7     |design_1_axi_gpio_10_0         |         1|
+|8     |design_1_axi_gpio_4_0          |         1|
+|9     |design_1_axi_gpio_4_1          |         1|
+|10    |design_1_axi_gpio_8_0          |         1|
+|11    |design_1_axi_gpio_0_2          |         1|
+|12    |design_1_axi_gpio_0_0          |         1|
+|13    |design_1_axi_iic_0_0           |         1|
+|14    |design_1_axi_quad_spi_0_0      |         1|
+|15    |design_1_axi_quad_spi_0_1      |         1|
+|16    |design_1_clk_wiz_0_0           |         1|
+|17    |design_1_proc_sys_reset_0_0    |         1|
+|18    |design_1_util_ds_buf_10_1      |         1|
+|19    |design_1_util_ds_buf_11_0      |         1|
+|20    |design_1_util_ds_buf_0_0       |         1|
+|21    |design_1_util_ds_buf_6_0       |         1|
+|22    |design_1_util_ds_buf_0_1       |         1|
+|23    |design_1_util_ds_buf_12_0      |         1|
+|24    |design_1_util_ds_buf_10_0      |         1|
+|25    |design_1_util_ds_buf_4_1       |         1|
+|26    |design_1_util_ds_buf_4_2       |         1|
+|27    |design_1_util_ds_buf_14_0      |         1|
+|28    |design_1_util_ds_buf_4_0       |         1|
+|29    |design_1_util_ds_buf_7_2       |         1|
+|30    |design_1_util_ds_buf_14_1      |         1|
+|31    |design_1_util_ds_buf_7_0       |         1|
+|32    |design_1_util_ds_buf_7_1       |         1|
+|33    |design_1_util_vector_logic_0_0 |         1|
+|34    |design_1_zynq_ultra_ps_e_0_0   |         1|
++------+-------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------+------+
+|      |Cell                         |Count |
++------+-----------------------------+------+
+|1     |design_1_auto_ds             |     1|
+|2     |design_1_auto_pc             |     1|
+|3     |design_1_axi_gpio_0          |     3|
+|6     |design_1_axi_gpio_10         |     1|
+|7     |design_1_axi_gpio_4          |     3|
+|10    |design_1_axi_gpio_8          |     1|
+|11    |design_1_axi_gpio_9          |     1|
+|12    |design_1_axi_iic_0           |     1|
+|13    |design_1_axi_quad_spi_0      |     2|
+|15    |design_1_clk_wiz_0           |     1|
+|16    |design_1_proc_sys_reset_0    |     1|
+|17    |design_1_util_ds_buf_0       |     2|
+|19    |design_1_util_ds_buf_10      |     2|
+|21    |design_1_util_ds_buf_11      |     1|
+|22    |design_1_util_ds_buf_12      |     1|
+|23    |design_1_util_ds_buf_14      |     2|
+|25    |design_1_util_ds_buf_4       |     3|
+|28    |design_1_util_ds_buf_6       |     1|
+|29    |design_1_util_ds_buf_7       |     3|
+|32    |design_1_util_vector_logic_0 |     1|
+|33    |design_1_xbar                |     1|
+|34    |design_1_zynq_ultra_ps_e_0   |     1|
+|35    |IBUF                         |     2|
+|36    |OBUF                         |    30|
++------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 2478.812 ; gain = 999.574
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:36 . Memory (MB): peak = 2478.812 ; gain = 964.168
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 2478.812 ; gain = 999.574
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 2490.832 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2519.391 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
+
+Synth Design complete | Checksum: 38ae7dcb
+INFO: [Common 17-83] Releasing license: Synthesis
+228 Infos, 131 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:54 . Memory (MB): peak = 2519.391 ; gain = 1975.727
+INFO: [Common 17-1381] The checkpoint 'C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  4 11:14:20 2024...

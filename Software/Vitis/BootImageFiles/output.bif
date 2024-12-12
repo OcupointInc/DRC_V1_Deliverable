@@ -1,0 +1,7 @@
+//arch = zynqmp; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader, destination_cpu = a53-0]C:\Users\yousefkhalil\Vitis_Projects\2023.1\DRCDeliverableSoftware\DRC_FSBL\Debug\DRC_FSBL.elf
+	[destination_device = pl]C:\Users\yousefkhalil\Vitis_Projects\2023.1\DRCDeliverableSoftware\DRC_FSBL\_ide\bitstream\design_1_wrapper.bit
+	[destination_cpu = a53-0]C:\Users\yousefkhalil\Vitis_Projects\2023.1\DRCDeliverableSoftware\DRCApplication\Debug\DRCApplication.elf
+}

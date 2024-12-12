@@ -1,0 +1,12 @@
+/* C:/Users/yousefkhalil/AppData/Local/Temp/bootgen_DRCApplication_system7631975986237039513/sd_card_temp/boot.bif */
+/* Command to create bitstream .bin file:       */
+/*   bootgen -image <bif_file> -split bin -w    */
+/* Command to create BOOT.BIN file:             */
+/*   bootgen -arch zynqmp -image <bif_file> -w -o i BOOT.BIN */
+/*DRCPlatform*/
+the_ROM_image:
+{
+ [bootloader, destination_cpu=a53-0] C:/Users/yousefkhalil/Vitis_Projects/2023.1/DRCDeliverableSoftware/DRCPlatform/export/DRCPlatform/sw/DRCPlatform/boot/fsbl.elf
+ [destination_device=pl] C:/Users/yousefkhalil/Vitis_Projects/2023.1/DRCDeliverableSoftware/DRCApplication/_ide/bitstream/design_1_wrapper.bit
+ [destination_cpu=a53-0, exception_level=el-3] C:/Users/yousefkhalil/Vitis_Projects/2023.1/DRCDeliverableSoftware/DRCApplication/Debug/DRCApplication.elf
+}

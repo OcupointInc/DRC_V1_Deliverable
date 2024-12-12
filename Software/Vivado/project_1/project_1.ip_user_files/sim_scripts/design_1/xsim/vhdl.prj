@@ -1,0 +1,33 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_proc_sys_reset_0_0/sim/design_1_proc_sys_reset_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd" \
+"../../../bd/design_1/ip/design_1_util_ds_buf_0_0/sim/design_1_util_ds_buf_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_util_ds_buf_0_1/sim/design_1_util_ds_buf_0_1.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_9_0/sim/design_1_axi_gpio_9_0.vhd" \
+"../../../bd/design_1/ip/design_1_util_ds_buf_10_0/sim/design_1_util_ds_buf_10_0.vhd" \
+"../../../bd/design_1/ip/design_1_util_ds_buf_12_0/sim/design_1_util_ds_buf_12_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_10_0/sim/design_1_axi_gpio_10_0.vhd" \
+"../../../bd/design_1/ip/design_1_util_ds_buf_14_0/sim/design_1_util_ds_buf_14_0.vhd" \
+"../../../bd/design_1/ip/design_1_util_ds_buf_14_1/sim/design_1_util_ds_buf_14_1.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_4_0/sim/design_1_axi_gpio_4_0.vhd" \
+"../../../bd/design_1/ip/design_1_util_ds_buf_4_0/sim/design_1_util_ds_buf_4_0.vhd" \
+"../../../bd/design_1/ip/design_1_util_ds_buf_7_0/sim/design_1_util_ds_buf_7_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_4_1/sim/design_1_axi_gpio_4_1.vhd" \
+"../../../bd/design_1/ip/design_1_util_ds_buf_4_1/sim/design_1_util_ds_buf_4_1.vhd" \
+"../../../bd/design_1/ip/design_1_util_ds_buf_7_1/sim/design_1_util_ds_buf_7_1.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_4_2/sim/design_1_axi_gpio_4_2.vhd" \
+"../../../bd/design_1/ip/design_1_util_ds_buf_4_2/sim/design_1_util_ds_buf_4_2.vhd" \
+"../../../bd/design_1/ip/design_1_util_ds_buf_7_2/sim/design_1_util_ds_buf_7_2.vhd" \
+"../../../bd/design_1/ip/design_1_axi_iic_0_0/sim/design_1_axi_iic_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_util_ds_buf_10_1/sim/design_1_util_ds_buf_10_1.vhd" \
+"../../../bd/design_1/ip/design_1_util_ds_buf_11_0/sim/design_1_util_ds_buf_11_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_1/sim/design_1_axi_gpio_0_1.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_2/sim/design_1_axi_gpio_0_2.vhd" \
+"../../../bd/design_1/ip/design_1_axi_quad_spi_0_0/sim/design_1_axi_quad_spi_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_quad_spi_0_1/sim/design_1_axi_quad_spi_0_1.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_8_0/sim/design_1_axi_gpio_8_0.vhd" \
+"../../../bd/design_1/ip/design_1_util_ds_buf_6_0/sim/design_1_util_ds_buf_6_0.vhd" \
+
+# Do not sort compile order
+nosort

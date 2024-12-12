@@ -1,0 +1,1226 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 465.719 ; gain = 159.066
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.1/data/ip'.
+add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 544.410 ; gain = 74.254
+Command: link_design -top design_1_wrapper -part xczu3eg-sfvc784-1-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xczu3eg-sfvc784-1-e
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.dcp' for cell 'design_1_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_9_0/design_1_axi_gpio_9_0.dcp' for cell 'design_1_i/axi_gpio_10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_2/design_1_axi_gpio_4_2.dcp' for cell 'design_1_i/axi_gpio_3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_10_0/design_1_axi_gpio_10_0.dcp' for cell 'design_1_i/axi_gpio_4'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_0/design_1_axi_gpio_4_0.dcp' for cell 'design_1_i/axi_gpio_5'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_1/design_1_axi_gpio_4_1.dcp' for cell 'design_1_i/axi_gpio_6'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_8_0/design_1_axi_gpio_8_0.dcp' for cell 'design_1_i/axi_gpio_7'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2.dcp' for cell 'design_1_i/axi_gpio_8'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.dcp' for cell 'design_1_i/axi_gpio_9'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0.dcp' for cell 'design_1_i/axi_iic_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.dcp' for cell 'design_1_i/axi_quad_spi_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_1/design_1_axi_quad_spi_0_1.dcp' for cell 'design_1_i/axi_quad_spi_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.dcp' for cell 'design_1_i/proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_1/design_1_util_ds_buf_10_1.dcp' for cell 'design_1_i/util_ds_buf_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_11_0/design_1_util_ds_buf_11_0.dcp' for cell 'design_1_i/util_ds_buf_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0.dcp' for cell 'design_1_i/util_ds_buf_10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_6_0/design_1_util_ds_buf_6_0.dcp' for cell 'design_1_i/util_ds_buf_11'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1.dcp' for cell 'design_1_i/util_ds_buf_12'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0.dcp' for cell 'design_1_i/util_ds_buf_13'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0.dcp' for cell 'design_1_i/util_ds_buf_14'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1.dcp' for cell 'design_1_i/util_ds_buf_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2.dcp' for cell 'design_1_i/util_ds_buf_3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0.dcp' for cell 'design_1_i/util_ds_buf_4'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0.dcp' for cell 'design_1_i/util_ds_buf_5'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_7_2/design_1_util_ds_buf_7_2.dcp' for cell 'design_1_i/util_ds_buf_6'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_1/design_1_util_ds_buf_14_1.dcp' for cell 'design_1_i/util_ds_buf_7'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_7_0/design_1_util_ds_buf_7_0.dcp' for cell 'design_1_i/util_ds_buf_8'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_7_1/design_1_util_ds_buf_7_1.dcp' for cell 'design_1_i/util_ds_buf_9'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0.dcp' for cell 'design_1_i/util_vector_logic_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.dcp' for cell 'design_1_i/zynq_ultra_ps_e_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/ps8_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0.dcp' for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.286 . Memory (MB): peak = 1516.766 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 175 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. design_1_i/clk_wiz_0/inst/clkin1_ibuf 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/clk_wiz_0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_0/IOBUF_IO_I[0]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_0/IOBUF_IO_I[0]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_0/IOBUF_IO_I[0]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_0/IOBUF_IO_O[0]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_0/IOBUF_IO_O[0]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_0/IOBUF_IO_O[0]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_0/IOBUF_IO_T[0]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_0/IOBUF_IO_T[0]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_0/IOBUF_IO_T[0]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_1/IOBUF_IO_I[0]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_1/IOBUF_IO_I[0]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_1/IOBUF_IO_I[0]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_1/IOBUF_IO_O[0]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_1/IOBUF_IO_O[0]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_1/IOBUF_IO_O[0]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_1/IOBUF_IO_T[0]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_1/IOBUF_IO_T[0]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_1/IOBUF_IO_T[0]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_I[0]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_I[0]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_I[0]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_I[1]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_I[1]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_I[1]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_I[2]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_I[2]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_I[2]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_I[3]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_I[3]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_I[3]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_I[4]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_I[4]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_I[4]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_I[5]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_I[5]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_I[5]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_O[0]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_O[0]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_O[0]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_O[1]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_O[1]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_O[1]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_O[2]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_O[2]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_O[2]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_O[3]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_O[3]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_O[3]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_O[4]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_O[4]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_O[4]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_O[5]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_O[5]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_O[5]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_T[0]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_T[0]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_T[0]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_T[1]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_T[1]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_T[1]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_T[2]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_T[2]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_T[2]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_T[3]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_T[3]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_T[3]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_T[4]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_T[4]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_T[4]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_T[5]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_T[5]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_10/IOBUF_IO_T[5]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[0]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[0]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[0]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[10]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[10]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[10]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[11]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[11]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[11]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[12]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[12]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[12]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[13]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[13]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[13]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[14]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[14]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[14]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[15]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[15]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[15]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[16]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[16]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[16]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[17]' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[17]' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'design_1_i/util_ds_buf_12/IOBUF_IO_I[17]' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+INFO: [Common 17-14] Message 'Constraints 18-550' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_9/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_9/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_9/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_9/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2_board.xdc] for cell 'design_1_i/axi_gpio_8/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2_board.xdc] for cell 'design_1_i/axi_gpio_8/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2.xdc] for cell 'design_1_i/axi_gpio_8/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2.xdc] for cell 'design_1_i/axi_gpio_8/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_10_0/design_1_axi_gpio_10_0_board.xdc] for cell 'design_1_i/axi_gpio_4/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_10_0/design_1_axi_gpio_10_0_board.xdc] for cell 'design_1_i/axi_gpio_4/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_10_0/design_1_axi_gpio_10_0.xdc] for cell 'design_1_i/axi_gpio_4/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_10_0/design_1_axi_gpio_10_0.xdc] for cell 'design_1_i/axi_gpio_4/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_0/design_1_axi_gpio_4_0_board.xdc] for cell 'design_1_i/axi_gpio_5/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_0/design_1_axi_gpio_4_0_board.xdc] for cell 'design_1_i/axi_gpio_5/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_0/design_1_axi_gpio_4_0.xdc] for cell 'design_1_i/axi_gpio_5/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_0/design_1_axi_gpio_4_0.xdc] for cell 'design_1_i/axi_gpio_5/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_1/design_1_axi_gpio_4_1_board.xdc] for cell 'design_1_i/axi_gpio_6/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_1/design_1_axi_gpio_4_1_board.xdc] for cell 'design_1_i/axi_gpio_6/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_1/design_1_axi_gpio_4_1.xdc] for cell 'design_1_i/axi_gpio_6/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_1/design_1_axi_gpio_4_1.xdc] for cell 'design_1_i/axi_gpio_6/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_2/design_1_axi_gpio_4_2_board.xdc] for cell 'design_1_i/axi_gpio_3/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_2/design_1_axi_gpio_4_2_board.xdc] for cell 'design_1_i/axi_gpio_3/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_2/design_1_axi_gpio_4_2.xdc] for cell 'design_1_i/axi_gpio_3/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_2/design_1_axi_gpio_4_2.xdc] for cell 'design_1_i/axi_gpio_3/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_8_0/design_1_axi_gpio_8_0_board.xdc] for cell 'design_1_i/axi_gpio_7/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_8_0/design_1_axi_gpio_8_0_board.xdc] for cell 'design_1_i/axi_gpio_7/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_8_0/design_1_axi_gpio_8_0.xdc] for cell 'design_1_i/axi_gpio_7/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_8_0/design_1_axi_gpio_8_0.xdc] for cell 'design_1_i/axi_gpio_7/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_9_0/design_1_axi_gpio_9_0_board.xdc] for cell 'design_1_i/axi_gpio_10/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_9_0/design_1_axi_gpio_9_0_board.xdc] for cell 'design_1_i/axi_gpio_10/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_9_0/design_1_axi_gpio_9_0.xdc] for cell 'design_1_i/axi_gpio_10/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_9_0/design_1_axi_gpio_9_0.xdc] for cell 'design_1_i/axi_gpio_10/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_board.xdc] for cell 'design_1_i/axi_iic_0/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0_board.xdc] for cell 'design_1_i/axi_iic_0/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_board.xdc] for cell 'design_1_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_board.xdc] for cell 'design_1_i/axi_quad_spi_0/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.xdc] for cell 'design_1_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.xdc] for cell 'design_1_i/axi_quad_spi_0/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_1/design_1_axi_quad_spi_0_1_board.xdc] for cell 'design_1_i/axi_quad_spi_1/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_1/design_1_axi_quad_spi_0_1_board.xdc] for cell 'design_1_i/axi_quad_spi_1/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_1/design_1_axi_quad_spi_0_1.xdc] for cell 'design_1_i/axi_quad_spi_1/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_1/design_1_axi_quad_spi_0_1.xdc] for cell 'design_1_i/axi_quad_spi_1/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+create_clock: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2146.203 ; gain = 31.984
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_board.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0.xdc] for cell 'design_1_i/proc_sys_reset_0/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_board.xdc] for cell 'design_1_i/util_ds_buf_10/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_board.xdc] for cell 'design_1_i/util_ds_buf_10/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_board.xdc] for cell 'design_1_i/util_ds_buf_12/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_1/design_1_util_ds_buf_0_1_board.xdc] for cell 'design_1_i/util_ds_buf_12/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_board.xdc] for cell 'design_1_i/util_ds_buf_14/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_0/design_1_util_ds_buf_10_0_board.xdc] for cell 'design_1_i/util_ds_buf_14/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_1/design_1_util_ds_buf_10_1_board.xdc] for cell 'design_1_i/util_ds_buf_0/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_10_1/design_1_util_ds_buf_10_1_board.xdc] for cell 'design_1_i/util_ds_buf_0/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_11_0/design_1_util_ds_buf_11_0_board.xdc] for cell 'design_1_i/util_ds_buf_1/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_11_0/design_1_util_ds_buf_11_0_board.xdc] for cell 'design_1_i/util_ds_buf_1/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0_board.xdc] for cell 'design_1_i/util_ds_buf_13/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_12_0/design_1_util_ds_buf_12_0_board.xdc] for cell 'design_1_i/util_ds_buf_13/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_board.xdc] for cell 'design_1_i/util_ds_buf_4/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_0/design_1_util_ds_buf_14_0_board.xdc] for cell 'design_1_i/util_ds_buf_4/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_1/design_1_util_ds_buf_14_1_board.xdc] for cell 'design_1_i/util_ds_buf_7/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_14_1/design_1_util_ds_buf_14_1_board.xdc] for cell 'design_1_i/util_ds_buf_7/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0_board.xdc] for cell 'design_1_i/util_ds_buf_5/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_0/design_1_util_ds_buf_4_0_board.xdc] for cell 'design_1_i/util_ds_buf_5/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1_board.xdc] for cell 'design_1_i/util_ds_buf_2/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_1/design_1_util_ds_buf_4_1_board.xdc] for cell 'design_1_i/util_ds_buf_2/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2_board.xdc] for cell 'design_1_i/util_ds_buf_3/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_4_2/design_1_util_ds_buf_4_2_board.xdc] for cell 'design_1_i/util_ds_buf_3/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_6_0/design_1_util_ds_buf_6_0_board.xdc] for cell 'design_1_i/util_ds_buf_11/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_6_0/design_1_util_ds_buf_6_0_board.xdc] for cell 'design_1_i/util_ds_buf_11/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_7_0/design_1_util_ds_buf_7_0_board.xdc] for cell 'design_1_i/util_ds_buf_8/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_7_0/design_1_util_ds_buf_7_0_board.xdc] for cell 'design_1_i/util_ds_buf_8/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_7_1/design_1_util_ds_buf_7_1_board.xdc] for cell 'design_1_i/util_ds_buf_9/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_7_1/design_1_util_ds_buf_7_1_board.xdc] for cell 'design_1_i/util_ds_buf_9/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_7_2/design_1_util_ds_buf_7_2_board.xdc] for cell 'design_1_i/util_ds_buf_6/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_7_2/design_1_util_ds_buf_7_2_board.xdc] for cell 'design_1_i/util_ds_buf_6/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0/inst'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0/inst'
+Parsing XDC File [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/new/OSDZU3_HardwarePlatform_IO_Standards.xdc]
+Finished Parsing XDC File [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/new/OSDZU3_HardwarePlatform_IO_Standards.xdc]
+Sourcing Tcl File [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_helper.tcl]
+Finished Sourcing Tcl File [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_helper.tcl]
+Sourcing Tcl File [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl]
+ INFO - set_property PACKAGE_PIN H13 leds_4bits_tri_o[0]
+ INFO - set_property PACKAGE_PIN L14 leds_4bits_tri_o[1]
+ INFO - set_property PACKAGE_PIN L13 leds_4bits_tri_o[2]
+ INFO - set_property PACKAGE_PIN J14 leds_4bits_tri_o[3]
+ INFO - set_property PACKAGE_PIN AH10 IOBUF_SCL_0[0]
+ INFO - set_property PACKAGE_PIN AG10 IOBUF_SDA_0[0]
+ INFO - set_property PACKAGE_PIN AH1 MISO_0
+ INFO - set_property PACKAGE_PIN AF2 MOSI_0
+ INFO - set_property PACKAGE_PIN AH2 SCK_0
+ INFO - set_property PACKAGE_PIN AE2 SS_0_4bits[0]
+ INFO - set_property PACKAGE_PIN J1 SS_0_4bits[1]
+ INFO - set_property PACKAGE_PIN A1 SS_0_4bits[2]
+ INFO - set_property PACKAGE_PIN A9 SS_0_4bits[3]
+ INFO - set_property PACKAGE_PIN G15 MISO_1
+ INFO - set_property PACKAGE_PIN D15 MOSI_1
+ INFO - set_property PACKAGE_PIN G14 SCK_1
+ INFO - set_property PACKAGE_PIN K14 SS_1_2bits[0]
+ INFO - set_property PACKAGE_PIN F11 SS_1_2bits[1]
+ INFO - set_property PACKAGE_PIN AF3 IOBUF_DATA0[0]
+ INFO - set_property PACKAGE_PIN AE3 IOBUF_DATA0[1]
+ INFO - set_property PACKAGE_PIN AH3 IOBUF_DATA0[2]
+ INFO - set_property PACKAGE_PIN AG3 IOBUF_DATA0[3]
+ INFO - set_property PACKAGE_PIN AH4 IOBUF_DATA0[4]
+ INFO - set_property PACKAGE_PIN AG4 IOBUF_DATA0[5]
+ INFO - set_property PACKAGE_PIN AG5 IOBUF_DATA0[6]
+ INFO - set_property PACKAGE_PIN AG8 IOBUF_DATA0[7]
+ INFO - set_property PACKAGE_PIN AF8 IOBUF_DATA0[8]
+ INFO - set_property PACKAGE_PIN AH7 IOBUF_DATA0[9]
+ INFO - set_property PACKAGE_PIN AH8 IOBUF_DATA0[10]
+ INFO - set_property PACKAGE_PIN AH9 IOBUF_DATA0[11]
+ INFO - set_property PACKAGE_PIN AG6 IOBUF_CLK0[0]
+ INFO - set_property PACKAGE_PIN K2 IOBUF_DATA1[0]
+ INFO - set_property PACKAGE_PIN H1 IOBUF_DATA1[1]
+ INFO - set_property PACKAGE_PIN J2 IOBUF_DATA1[2]
+ INFO - set_property PACKAGE_PIN L1 IOBUF_DATA1[3]
+ INFO - set_property PACKAGE_PIN L3 IOBUF_DATA1[4]
+ INFO - set_property PACKAGE_PIN K1 IOBUF_DATA1[5]
+ INFO - set_property PACKAGE_PIN L2 IOBUF_DATA1[6]
+ INFO - set_property PACKAGE_PIN H3 IOBUF_DATA1[7]
+ INFO - set_property PACKAGE_PIN K4 IOBUF_DATA1[8]
+ INFO - set_property PACKAGE_PIN K3 IOBUF_DATA1[9]
+ INFO - set_property PACKAGE_PIN K8 IOBUF_DATA1[10]
+ INFO - set_property PACKAGE_PIN K7 IOBUF_DATA1[11]
+ INFO - set_property PACKAGE_PIN H4 IOBUF_CLK1[0]
+ INFO - set_property PACKAGE_PIN C2 IOBUF_DATA2[0]
+ INFO - set_property PACKAGE_PIN C1 IOBUF_DATA2[1]
+ INFO - set_property PACKAGE_PIN E4 IOBUF_DATA2[2]
+ INFO - set_property PACKAGE_PIN B1 IOBUF_DATA2[3]
+ INFO - set_property PACKAGE_PIN E3 IOBUF_DATA2[4]
+ INFO - set_property PACKAGE_PIN E1 IOBUF_DATA2[5]
+ INFO - set_property PACKAGE_PIN G3 IOBUF_DATA2[6]
+ INFO - set_property PACKAGE_PIN F3 IOBUF_DATA2[7]
+ INFO - set_property PACKAGE_PIN G1 IOBUF_DATA2[8]
+ INFO - set_property PACKAGE_PIN F2 IOBUF_DATA2[9]
+ INFO - set_property PACKAGE_PIN F1 IOBUF_DATA2[10]
+ INFO - set_property PACKAGE_PIN E2 IOBUF_DATA2[11]
+ INFO - set_property PACKAGE_PIN D1 IOBUF_CLK2[0]
+ INFO - set_property PACKAGE_PIN A8 IOBUF_DATA3[0]
+ INFO - set_property PACKAGE_PIN D7 IOBUF_DATA3[1]
+ INFO - set_property PACKAGE_PIN D6 IOBUF_DATA3[2]
+ INFO - set_property PACKAGE_PIN A7 IOBUF_DATA3[3]
+ INFO - set_property PACKAGE_PIN A6 IOBUF_DATA3[4]
+ INFO - set_property PACKAGE_PIN A5 IOBUF_DATA3[5]
+ INFO - set_property PACKAGE_PIN B5 IOBUF_DATA3[6]
+ INFO - set_property PACKAGE_PIN A4 IOBUF_DATA3[7]
+ INFO - set_property PACKAGE_PIN B4 IOBUF_DATA3[8]
+ INFO - set_property PACKAGE_PIN B3 IOBUF_DATA3[9]
+ INFO - set_property PACKAGE_PIN A2 IOBUF_DATA3[10]
+ INFO - set_property PACKAGE_PIN C3 IOBUF_DATA3[11]
+ INFO - set_property PACKAGE_PIN G6 IOBUF_CLK3[0]
+ INFO - set_property PACKAGE_PIN Y9 IOBUF_CLKP[0]
+ INFO - set_property PACKAGE_PIN AA8 IOBUF_CLKN[0]
+ INFO - set_property PACKAGE_PIN Y12 ctrl_4bits_tri_o[0]
+ INFO - set_property PACKAGE_PIN AH12 ctrl_4bits_tri_o[1]
+ INFO - set_property PACKAGE_PIN D11 ctrl_4bits_tri_o[2]
+ INFO - set_property PACKAGE_PIN AD1 ctrl_4bits_tri_o[3]
+ INFO - set_property PACKAGE_PIN F7 spdt_10bits_tri_o[0]
+ INFO - set_property PACKAGE_PIN F10 spdt_10bits_tri_o[1]
+ INFO - set_property PACKAGE_PIN F12 spdt_10bits_tri_o[2]
+ INFO - set_property PACKAGE_PIN J6 spdt_10bits_tri_o[3]
+ INFO - set_property PACKAGE_PIN B6 spdt_10bits_tri_o[4]
+ INFO - set_property PACKAGE_PIN E8 spdt_10bits_tri_o[5]
+ INFO - set_property PACKAGE_PIN H12 spdt_10bits_tri_o[6]
+ INFO - set_property PACKAGE_PIN D10 spdt_10bits_tri_o[7]
+ INFO - set_property PACKAGE_PIN E10 spdt_10bits_tri_o[8]
+ INFO - set_property PACKAGE_PIN E12 spdt_10bits_tri_o[9]
+ INFO - set_property PACKAGE_PIN P7 IOBUF_SE_0_31[0]
+ INFO - set_property PACKAGE_PIN L7 IOBUF_SE_0_31[1]
+ INFO - set_property PACKAGE_PIN AC7 IOBUF_SE_0_31[2]
+ INFO - set_property PACKAGE_PIN AE7 IOBUF_SE_0_31[3]
+ INFO - set_property PACKAGE_PIN AB7 IOBUF_SE_0_31[4]
+ INFO - set_property PACKAGE_PIN AC9 IOBUF_SE_0_31[5]
+ INFO - set_property PACKAGE_PIN AF5 IOBUF_SE_0_31[6]
+ INFO - set_property PACKAGE_PIN AD11 IOBUF_SE_0_31[7]
+ INFO - set_property PACKAGE_PIN AC12 IOBUF_SE_0_31[8]
+ INFO - set_property PACKAGE_PIN AD12 IOBUF_SE_0_31[9]
+ INFO - set_property PACKAGE_PIN AA13 IOBUF_SE_0_31[10]
+ INFO - set_property PACKAGE_PIN AB13 IOBUF_SE_0_31[11]
+ INFO - set_property PACKAGE_PIN AB15 IOBUF_SE_0_31[12]
+ INFO - set_property PACKAGE_PIN V9 IOBUF_SE_0_31[13]
+ INFO - set_property PACKAGE_PIN Y8 IOBUF_SE_0_31[14]
+ INFO - set_property PACKAGE_PIN E15 IOBUF_SE_0_31[15]
+ INFO - set_property PACKAGE_PIN H9 IOBUF_SE_0_31[16]
+ INFO - set_property PACKAGE_PIN H8 IOBUF_SE_0_31[17]
+ INFO - set_property PACKAGE_PIN G11 IOBUF_SE_0_31[18]
+ INFO - set_property PACKAGE_PIN A13 IOBUF_SE_0_31[19]
+ INFO - set_property PACKAGE_PIN J7 IOBUF_SE_0_31[20]
+ INFO - set_property PACKAGE_PIN H7 IOBUF_SE_0_31[21]
+ INFO - set_property PACKAGE_PIN N6 IOBUF_SE_0_31[22]
+ INFO - set_property PACKAGE_PIN L6 IOBUF_SE_0_31[23]
+ INFO - set_property PACKAGE_PIN AC6 IOBUF_SE_0_31[24]
+ INFO - set_property PACKAGE_PIN AC8 IOBUF_SE_0_31[25]
+ INFO - set_property PACKAGE_PIN AD2 IOBUF_SE_0_31[26]
+ INFO - set_property PACKAGE_PIN B14 IOBUF_SE_0_31[27]
+ INFO - set_property PACKAGE_PIN AE9 IOBUF_SE_0_31[28]
+ INFO - set_property PACKAGE_PIN AD9 IOBUF_SE_0_31[29]
+ INFO - set_property PACKAGE_PIN A14 IOBUF_SE_0_31[30]
+ INFO - set_property PACKAGE_PIN AE12 IOBUF_SE_0_31[31]
+ INFO - set_property PACKAGE_PIN AF12 IOBUF_SE_32_37[0]
+ INFO - set_property PACKAGE_PIN AC14 IOBUF_SE_32_37[1]
+ INFO - set_property PACKAGE_PIN AC13 IOBUF_SE_32_37[2]
+ INFO - set_property PACKAGE_PIN B13 IOBUF_SE_32_37[3]
+ INFO - set_property PACKAGE_PIN AD7 IOBUF_SE_32_37[4]
+ INFO - set_property PACKAGE_PIN AB14 IOBUF_SE_32_37[5]
+ INFO - set_property PACKAGE_PIN E13 IOBUF_DS_0_21_p[0]
+ INFO - set_property PACKAGE_PIN A15 IOBUF_DS_0_21_n[0]
+ INFO - set_property PACKAGE_PIN E14 IOBUF_DS_0_21_p[1]
+ INFO - set_property PACKAGE_PIN B15 IOBUF_DS_0_21_n[1]
+ INFO - set_property PACKAGE_PIN C9 IOBUF_DS_0_21_p[2]
+ INFO - set_property PACKAGE_PIN B9 IOBUF_DS_0_21_n[2]
+ INFO - set_property PACKAGE_PIN C14 IOBUF_DS_0_21_p[3]
+ INFO - set_property PACKAGE_PIN C13 IOBUF_DS_0_21_n[3]
+ INFO - set_property PACKAGE_PIN E5 IOBUF_DS_0_21_p[4]
+ INFO - set_property PACKAGE_PIN D5 IOBUF_DS_0_21_n[4]
+ INFO - set_property PACKAGE_PIN AD15 IOBUF_DS_0_21_p[5]
+ INFO - set_property PACKAGE_PIN AC4 IOBUF_DS_0_21_n[5]
+ INFO - set_property PACKAGE_PIN AC3 IOBUF_DS_0_21_p[6]
+ INFO - set_property PACKAGE_PIN G13 IOBUF_DS_0_21_n[6]
+ INFO - set_property PACKAGE_PIN F13 IOBUF_DS_0_21_p[7]
+ INFO - set_property PACKAGE_PIN AB2 IOBUF_DS_0_21_n[7]
+ INFO - set_property PACKAGE_PIN AG1 IOBUF_DS_0_21_p[8]
+ INFO - set_property PACKAGE_PIN AA11 IOBUF_DS_0_21_n[8]
+ INFO - set_property PACKAGE_PIN AA10 IOBUF_DS_0_21_p[9]
+ INFO - set_property PACKAGE_PIN C12 IOBUF_DS_0_21_n[9]
+ INFO - set_property PACKAGE_PIN D12 IOBUF_DS_0_21_p[10]
+ INFO - set_property PACKAGE_PIN G10 IOBUF_DS_0_21_n[10]
+ INFO - set_property PACKAGE_PIN H11 IOBUF_DS_0_21_p[11]
+ INFO - set_property PACKAGE_PIN C11 IOBUF_DS_0_21_n[11]
+ INFO - set_property PACKAGE_PIN B10 IOBUF_DS_0_21_p[12]
+ INFO - set_property PACKAGE_PIN C8 IOBUF_DS_0_21_n[12]
+ INFO - set_property PACKAGE_PIN B8 IOBUF_DS_0_21_p[13]
+ INFO - set_property PACKAGE_PIN D4 IOBUF_DS_0_21_n[13]
+ INFO - set_property PACKAGE_PIN C4 IOBUF_DS_0_21_p[14]
+ INFO - set_property PACKAGE_PIN G5 IOBUF_DS_0_21_n[14]
+ INFO - set_property PACKAGE_PIN F5 IOBUF_DS_0_21_p[15]
+ INFO - set_property PACKAGE_PIN AC2 IOBUF_DS_0_21_n[15]
+ INFO - set_property PACKAGE_PIN AE15 IOBUF_DS_0_21_p[16]
+ INFO - set_property PACKAGE_PIN AF1 IOBUF_DS_0_21_n[16]
+ INFO - set_property PACKAGE_PIN AH14 IOBUF_DS_0_21_p[17]
+ INFO - set_property PACKAGE_PIN AD5 IOBUF_DS_0_21_n[17]
+ INFO - set_property PACKAGE_PIN AD4 IOBUF_DS_0_21_p[18]
+ INFO - set_property PACKAGE_PIN AF7 IOBUF_DS_0_21_n[18]
+ INFO - set_property PACKAGE_PIN AF6 IOBUF_DS_0_21_p[19]
+ INFO - set_property PACKAGE_PIN AB11 IOBUF_DS_0_21_n[19]
+ INFO - set_property PACKAGE_PIN AC11 IOBUF_DS_0_21_p[20]
+ INFO - set_property PACKAGE_PIN AE14 IOBUF_DS_0_21_n[20]
+ INFO - set_property PACKAGE_PIN AD14 IOBUF_DS_0_21_p[21]
+ INFO - set_property PACKAGE_PIN AG14 IOBUF_DS_0_21_n[21]
+Finished Sourcing Tcl File [C:/Users/NYorr/Downloads/project_1/project_1/project_1.srcs/constrs_1/imports/new/osdzu3_package_pins.tcl]
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_clocks.xdc] for cell 'design_1_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_clocks.xdc] for cell 'design_1_i/axi_quad_spi_0/U0'
+Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_1/design_1_axi_quad_spi_0_1_clocks.xdc] for cell 'design_1_i/axi_quad_spi_1/U0'
+Finished Parsing XDC File [c:/Users/NYorr/Downloads/project_1/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_1/design_1_axi_quad_spi_0_1_clocks.xdc] for cell 'design_1_i/axi_quad_spi_1/U0'
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: design_1_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
+ 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+INFO: [Project 1-1714] 31 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+WARNING: [Constraints 18-5572] Instance design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+WARNING: [Constraints 18-5572] Instance design_1_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/IO0_I_REG has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2480.031 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 147 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 136 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 8 instances
+
+48 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:37 . Memory (MB): peak = 2480.031 ; gain = 1935.621
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2480.031 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1648754af
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2480.031 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-1566] Pulled 6 inverters resulting in an inversion of 16 pins
+INFO: [Opt 31-138] Pushed 10 inverter(s) to 551 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 142b2814c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.550 . Memory (MB): peak = 2805.273 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 132 cells and removed 470 cells
+INFO: [Opt 31-1021] In phase Retarget, 27 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 4 inverter(s) to 4 load pin(s).
+Phase 2 Constant propagation | Checksum: 1c1ac4563
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.640 . Memory (MB): peak = 2805.273 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 27 cells and removed 92 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 29 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1880cc37e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2805.273 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 543 cells
+INFO: [Opt 31-1021] In phase Sweep, 100 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+INFO: [Opt 31-274] Optimized connectivity to 1 cascaded buffer cells
+Phase 4 BUFG optimization | Checksum: 1ad7a5a78
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2805.273 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 1 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1b79484bf
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2805.273 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+INFO: [Opt 31-1566] Pulled 1 inverters resulting in an inversion of 5 pins
+Phase 6 Post Processing Netlist | Checksum: 16164eaea
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2805.273 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 35 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             132  |             470  |                                             27  |
+|  Constant propagation         |              27  |              92  |                                             29  |
+|  Sweep                        |               0  |             543  |                                            100  |
+|  BUFG optimization            |               0  |               1  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               1  |                                             35  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2805.273 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 14e670d73
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2805.273 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 14e670d73
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2805.273 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 14e670d73
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2805.273 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2805.273 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 14e670d73
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2805.273 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+73 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2805.273 ; gain = 325.242
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.161 . Memory (MB): peak = 2872.785 ; gain = 9.012
+INFO: [Common 17-1381] The checkpoint 'C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2882.590 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: f2c4d13c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2882.590 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2882.590 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 11cddefde
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1dc4f3d85
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1dc4f3d85
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+Phase 1 Placer Initialization | Checksum: 1dc4f3d85
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 158bdb5d6
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 158bdb5d6
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 158bdb5d6
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 13fdb2c3a
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 13fdb2c3a
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+Phase 2.1.1 Partition Driven Placement | Checksum: 13fdb2c3a
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+Phase 2.1 Floorplanning | Checksum: 12cc4011f
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 12cc4011f
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 12cc4011f
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 13362dcf6
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 253 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 96 nets or LUTs. Breaked 0 LUT, combined 96 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 1 candidate driver set for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 1 net.  Re-placed 14 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 0 new cell, deleted 0 existing cell and moved 14 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 3950.504 ; gain = 0.000
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 3950.504 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |             96  |                    96  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     1  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |             96  |                    97  |           0  |           5  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 10453d8f2
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:56 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+Phase 2.4 Global Placement Core | Checksum: 1c9313dab
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+Phase 2 Global Placement | Checksum: 1c9313dab
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1f0536689
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:01:08 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1661412e2
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:01:09 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 1487f031c
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:01:21 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Phase 3.3.2 Flow Legalize Slice Clusters
+Phase 3.3.2 Flow Legalize Slice Clusters | Checksum: 17fc90cb8
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Phase 3.3.3 Slice Area Swap
+
+Phase 3.3.3.1 Slice Area Swap Initial
+Phase 3.3.3.1 Slice Area Swap Initial | Checksum: bb3ac501
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+Phase 3.3.3 Slice Area Swap | Checksum: bb3ac501
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+Phase 3.3 Small Shape DP | Checksum: 147958d55
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 158318e0e
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 17fd6c139
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+Phase 3 Detail Placement | Checksum: 17fd6c139
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 2ab7031b7
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=6.093 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 229f4855e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.219 . Memory (MB): peak = 3950.504 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 229f4855e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.305 . Memory (MB): peak = 3950.504 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 2ab7031b7
+
+Time (s): cpu = 00:01:50 ; elapsed = 00:01:57 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=6.093. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 238b10617
+
+Time (s): cpu = 00:01:50 ; elapsed = 00:01:57 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Time (s): cpu = 00:01:50 ; elapsed = 00:01:57 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+Phase 4.1 Post Commit Optimization | Checksum: 238b10617
+
+Time (s): cpu = 00:01:50 ; elapsed = 00:01:57 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3950.504 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 2e5f80f45
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:02:06 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 2e5f80f45
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:02:06 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+Phase 4.3 Placer Reporting | Checksum: 2e5f80f45
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:02:06 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3950.504 ; gain = 0.000
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:02:06 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2b4ad7d7d
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:02:06 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+Ending Placer Task | Checksum: 22c069330
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:02:06 . Memory (MB): peak = 3950.504 ; gain = 1067.914
+INFO: [Common 17-83] Releasing license: Implementation
+112 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:00 ; elapsed = 00:02:08 . Memory (MB): peak = 3950.504 ; gain = 1077.719
+INFO: [runtcl-4] Executing : report_io -file design_1_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.225 . Memory (MB): peak = 3950.504 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 3950.504 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 3950.504 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3950.504 ; gain = 0.000
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+121 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3950.504 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/impl_1/design_1_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: dd0033ed ConstDB: 0 ShapeSum: a1bf5615 RouteDB: ad47092e
+Nodegraph reading from file.  Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.805 . Memory (MB): peak = 3950.504 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 34a458b2 | NumContArr: 3e8b2803 | Constraints: c8212449 | Timing: 0
+Phase 1 Build RT Design | Checksum: 13b50a4fe
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3950.504 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 13b50a4fe
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3950.504 ; gain = 0.000
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 13b50a4fe
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3950.504 ; gain = 0.000
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 13c05c8a8
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 3950.504 ; gain = 0.000
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 17b7261bc
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 3950.504 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=6.183  | TNS=0.000  | WHS=-0.055 | THS=-4.600 |
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 6903
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 5838
+  Number of Partially Routed Nets     = 1065
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: fbcac0b7
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 3950.504 ; gain = 0.000
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: fbcac0b7
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 3950.504 ; gain = 0.000
+Phase 3 Initial Routing | Checksum: 14257c709
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 3950.504 ; gain = 0.000
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1236
+ Number of Nodes with overlaps = 76
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.463  | TNS=0.000  | WHS=0.020  | THS=0.000  |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1e115299c
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 3950.504 ; gain = 0.000
+
+Phase 4.2 Additional Iteration for Hold
+Phase 4.2 Additional Iteration for Hold | Checksum: 25c918c1b
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 3950.504 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: 25c918c1b
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 3950.504 ; gain = 0.000
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 2428263a4
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 3950.504 ; gain = 0.000
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 2428263a4
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 3950.504 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: 2428263a4
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 3950.504 ; gain = 0.000
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1c27ee440
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 3950.504 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.463  | TNS=0.000  | WHS=0.020  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1c27ee440
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 3950.504 ; gain = 0.000
+Phase 6 Post Hold Fix | Checksum: 1c27ee440
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 3950.504 ; gain = 0.000
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.53219 %
+  Global Horizontal Routing Utilization  = 1.29966 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 21109ddff
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 3950.504 ; gain = 0.000
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 21109ddff
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 3950.504 ; gain = 0.000
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 21109ddff
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 3950.504 ; gain = 0.000
+
+Phase 10 Resolve XTalk
+Phase 10 Resolve XTalk | Checksum: 21109ddff
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 3950.504 ; gain = 0.000
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=5.463  | TNS=0.000  | WHS=0.020  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 11 Post Router Timing | Checksum: 21109ddff
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 3950.504 ; gain = 0.000
+INFO: [Route 35-16] Router Completed Successfully
+
+Phase 12 Post-Route Event Processing
+Phase 12 Post-Route Event Processing | Checksum: d00ec190
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 3950.504 ; gain = 0.000
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 3950.504 ; gain = 0.000
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+135 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 3950.504 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+Command: report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/impl_1/design_1_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3950.504 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+145 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3950.504 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_route_status -file design_1_wrapper_route_status.rpt -pb design_1_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file design_1_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file design_1_wrapper_bus_skew_routed.rpt -pb design_1_wrapper_bus_skew_routed.pb -rpx design_1_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3950.504 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/NYorr/Downloads/project_1/project_1/project_1.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_quad_spi_1/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/xpm_fifo_instance.xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+Command: write_bitstream -force design_1_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu3eg'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A1' of cell design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O5=(A3)+((~A3)*(~A5)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A2' of cell design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O5=(A5)+((~A5)*(~A4)*A1)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A2' of cell design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O5=(A3)+((~A3)*(~A5)*A4)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC RTSTAT-10] No routable loads: 33 net(s) have no routable loads. The problem bus(es) and/or net(s) are design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0], design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0], design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0], design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i... and (the first 15 of 21 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 4 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+17 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 3950.504 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  4 11:19:08 2024...

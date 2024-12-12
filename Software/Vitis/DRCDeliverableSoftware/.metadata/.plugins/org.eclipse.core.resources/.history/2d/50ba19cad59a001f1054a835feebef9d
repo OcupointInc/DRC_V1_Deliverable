@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="DRC_FSBL" location="C:/Users/yousefkhalil/Vitis_Projects/2023.1/DRCDeliverableSoftware/DRC_FSBL" platform="C:/Users/yousefkhalil/Vitis_Projects/2023.1/DRCDeliverableSoftware/DRCPlatform/export/DRCPlatform/DRCPlatform.xpfm" platformUID="xilinx:osdzu3eg1_2g_1v8_sip::0.0(custom)" systemProject="DRC_FSBL_system" sysConfig="DRCPlatform" runtime="cpp" cpu="fsbl_domain" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="88ea9d5a6a0114bf9c3653a7448cdfce">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.152763770">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.768442732" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="zynqmp_fsbl" hasBspSettings="true"/>
+</sdkproject:SdkProject>

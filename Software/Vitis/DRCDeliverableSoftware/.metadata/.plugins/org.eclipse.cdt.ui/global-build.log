@@ -1,0 +1,20 @@
+Nothing to build in platform 'DRCPlatform'
+
+18:46:35 **** Incremental Build of configuration Debug for project DRCApplication ****
+make all 
+'Building file: ../src/BB_test.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/BB_test.o" -IC:/Users/yousefkhalil/Vitis_Projects/2023.1/DRCDeliverableSoftware/DRCPlatform/export/DRCPlatform/sw/DRCPlatform/standalone_domain/bspinclude/include -MMD -MP -MF"src/BB_test.d" -MT"src/BB_test.o" -o "src/BB_test.o" "../src/BB_test.c"
+'Finished building: ../src/BB_test.c'
+' '
+'Building target: DRCApplication.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/yousefkhalil/Vitis_Projects/2023.1/DRCDeliverableSoftware/DRCPlatform/export/DRCPlatform/sw/DRCPlatform/standalone_domain/bsplib/lib -o "DRCApplication.elf"  ./src/BB_test.o ./src/RegisterMaps.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DRCApplication.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size DRCApplication.elf  |tee "DRCApplication.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 173620	   8376	  22180	 204176	  31d90	DRCApplication.elf
+'Finished building: DRCApplication.elf.size'
+' '

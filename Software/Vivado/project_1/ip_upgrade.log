@@ -1,0 +1,633 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_zynq_ultra_ps_e_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_zynq_ultra_ps_e_0_0 (xilinx.com:ip:zynq_ultra_ps_e:3.5) to current project options.
+
+2. Upgrade messages
+-------------------
+
+Set parameter PSU__GPIO_EMIO__PERIPHERAL__IO to value 95 (source 'default')
+WARNING: upgrade cannot add parameter PSU__USE__USB3_0_HUB with default value 0 : a parameter called PSU__USE__USB3_0_HUB already exists in zynq_ultra_ps_e_v3_5
+WARNING: upgrade cannot add parameter PSU__USE__USB3_1_HUB with default value 0 : a parameter called PSU__USE__USB3_1_HUB already exists in zynq_ultra_ps_e_v3_5
+Set parameter PSU__PROTECTION__FPD_SEGMENTS to value SA:0xFD1A0000; SIZE:1280; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD000000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD010000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD020000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD030000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD040000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD050000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD610000; SIZE:512; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware |  SA:0xFD5D0000; SIZE:64; UNIT:KB; RegionTZ:Secure; WrAllowed:Read/Write; subsystemId:PMU Firmware | SA:0xFD1A0000 ; SIZE:1280; UNIT:KB; RegionTZ:Secure ; WrAllowed:Read/Write; subsystemId:Secure Subsystem (source 'default')
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_util_ds_buf_7_2'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_util_ds_buf_7_2 (xilinx.com:ip:util_ds_buf:2.2 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_util_ds_buf_7_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_util_ds_buf_7_1 (xilinx.com:ip:util_ds_buf:2.2 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_util_ds_buf_7_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_util_ds_buf_7_0 (xilinx.com:ip:util_ds_buf:2.2 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_util_ds_buf_6_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_util_ds_buf_6_0 (xilinx.com:ip:util_ds_buf:2.2 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_util_ds_buf_4_2'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_util_ds_buf_4_2 (xilinx.com:ip:util_ds_buf:2.2 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_util_ds_buf_4_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_util_ds_buf_4_1 (xilinx.com:ip:util_ds_buf:2.2 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_util_ds_buf_4_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_util_ds_buf_4_0 (xilinx.com:ip:util_ds_buf:2.2 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_util_ds_buf_14_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_util_ds_buf_14_1 (xilinx.com:ip:util_ds_buf:2.2 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_util_ds_buf_14_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_util_ds_buf_14_0 (xilinx.com:ip:util_ds_buf:2.2 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_util_ds_buf_12_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_util_ds_buf_12_0 (xilinx.com:ip:util_ds_buf:2.2 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_util_ds_buf_11_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_util_ds_buf_11_0 (xilinx.com:ip:util_ds_buf:2.2 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_util_ds_buf_10_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_util_ds_buf_10_1 (xilinx.com:ip:util_ds_buf:2.2 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_util_ds_buf_10_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_util_ds_buf_10_0 (xilinx.com:ip:util_ds_buf:2.2 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_util_ds_buf_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_util_ds_buf_0_1 (xilinx.com:ip:util_ds_buf:2.2 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_util_ds_buf_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_util_ds_buf_0_0 (xilinx.com:ip:util_ds_buf:2.2 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_proc_sys_reset_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_proc_sys_reset_0_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 13)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_clk_wiz_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 12)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_quad_spi_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_axi_quad_spi_0_1 (xilinx.com:ip:axi_quad_spi:3.2 (Rev. 27)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_quad_spi_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_axi_quad_spi_0_0 (xilinx.com:ip:axi_quad_spi:3.2 (Rev. 27)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_iic_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_axi_iic_0_0 (xilinx.com:ip:axi_iic:2.1 (Rev. 4)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_gpio_9_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_axi_gpio_9_0 (xilinx.com:ip:axi_gpio:2.0 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_gpio_8_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_axi_gpio_8_0 (xilinx.com:ip:axi_gpio:2.0 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_gpio_4_2'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_axi_gpio_4_2 (xilinx.com:ip:axi_gpio:2.0 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_gpio_4_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_axi_gpio_4_1 (xilinx.com:ip:axi_gpio:2.0 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_gpio_4_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_axi_gpio_4_0 (xilinx.com:ip:axi_gpio:2.0 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_gpio_10_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_axi_gpio_10_0 (xilinx.com:ip:axi_gpio:2.0 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_gpio_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_axi_gpio_0_2 (xilinx.com:ip:axi_gpio:2.0 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_gpio_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_axi_gpio_0_1 (xilinx.com:ip:axi_gpio:2.0 (Rev. 30)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Nov  4 10:45:35 2024
+| Host         : DESKTOP-JTT5U02 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sfvc784-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_gpio_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_axi_gpio_0_0 (xilinx.com:ip:axi_gpio:2.0 (Rev. 30)) to current project options.
+

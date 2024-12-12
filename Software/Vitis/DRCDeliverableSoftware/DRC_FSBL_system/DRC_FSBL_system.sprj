@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="DRC_FSBL_system" platform="C:/Users/yousefkhalil/Vitis_Projects/2023.1/DRCDeliverableSoftware/DRCPlatform/export/DRCPlatform/DRCPlatform.xpfm" platformUID="xilinx:osdzu3eg1_2g_1v8_sip::0.0(custom)" sysConfig="DRCPlatform" runtime="cpp" rootFSLocation="" linuxImage="" sysroot="">
+  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.812306385">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="DRC_FSBL" domainName="fsbl_domain" domainPrettyName="fsbl_domain" appBuildConfig="Debug"/>
+      <options xsi:type="sdkproject:SdkOptions" generateSdCard="true"/>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.1686311291">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="DRC_FSBL" domainName="fsbl_domain" domainPrettyName="fsbl_domain" appBuildConfig="Release"/>
+      <options xsi:type="sdkproject:SdkOptions" generateSdCard="true"/>
+    </configBuildOptions>
+  </configuration>
+</systemproject:SystemProject>
